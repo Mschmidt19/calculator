@@ -51,10 +51,10 @@ describe Calculator do
       expect(subject).to respond_to(:puts_pretty_add).with(2).arguments
     end
     it 'puts "3" when passed 1 and 2 as arguments' do
-      expect{subject.puts_pretty_add(1, 2)}.to output('the sum of 1 and 2 is 3').to_stdout
+      expect{subject.puts_pretty_add(1, 2)}.to output("the sum of 1 and 2 is 3\n").to_stdout
     end
     it 'puts "8" when passed 3 and 5 as arguments' do
-      expect{subject.puts_pretty_add(3, 5)}.to output('the sum of 3 and 5 is 8').to_stdout
+      expect{subject.puts_pretty_add(3, 5)}.to output("the sum of 3 and 5 is 8\n").to_stdout
     end
   end
 end

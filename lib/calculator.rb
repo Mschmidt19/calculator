@@ -13,6 +13,6 @@ class Calculator
     sum
   end
   def puts_pretty_add(a, b)
-    print "#{pretty_add(a, b)}"
+    puts "#{pretty_add(a, b)}"
   end
 end
